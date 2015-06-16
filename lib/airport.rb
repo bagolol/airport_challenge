@@ -1,13 +1,14 @@
 require_relative 'plane'
 require_relative 'weather'
 
+AIRPORT_CAPACITY = 10
+
 class Airport
   include Forecast
 
-  attr_accessor(:capacity, :hangar)
+  attr_accessor(:hangar)
 
-  def initialize (capacity=10)
-    @capacity = capacity
+  def initialize()
     @hangar = []
   end
 
@@ -20,7 +21,6 @@ class Airport
 
   def take_off plane
     fail 'stormy weather, permission denied' if forecast == "stormy"
-    hangar.pop
     plane.flying
   end
 
@@ -28,12 +28,9 @@ class Airport
     Forecast.now
   end
 
-  # private
-
-  attr_reader :hangar
 
   def full?
-    hangar.count >= capacity
+    hangar.count >= AIRPORT_CAPACITY
   end
 
 end
