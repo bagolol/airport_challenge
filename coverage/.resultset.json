@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/rocco/makers/week1/airport_challenge/spec/airport_spec.rb": [
+      "/Users/rocco/Makers/week1/airport_challenge/spec/airport_spec.rb": [
         1,
         null,
         null,
@@ -30,16 +30,14 @@
         2,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
         1,
         1,
+        null,
         null,
         1,
         1,
         2,
+        null,
         null,
         1,
         1,
@@ -48,7 +46,7 @@
         null,
         null
       ],
-      "/Users/rocco/makers/week1/airport_challenge/lib/airport.rb": [
+      "/Users/rocco/Makers/week1/airport_challenge/lib/airport.rb": [
         1,
         1,
         null,
@@ -86,47 +84,35 @@
         null,
         null
       ],
-      "/Users/rocco/makers/week1/airport_challenge/lib/plane.rb": [
+      "/Users/rocco/Makers/week1/airport_challenge/lib/plane.rb": [
         1,
         null,
         1,
         null,
         1,
-        2,
+        3,
         null,
         null,
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/rocco/Makers/week1/airport_challenge/lib/weather.rb": [
+        1,
+        1,
         null,
         1,
         0,
         null,
         null
       ],
-      "/Users/rocco/makers/week1/airport_challenge/lib/weather.rb": [
+      "/Users/rocco/Makers/week1/airport_challenge/spec/plane_spec.rb": [
         1,
-        1,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/Users/rocco/makers/week1/airport_challenge/spec/plane_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null,
         1,
         null,
@@ -137,17 +123,14 @@
         1,
         1,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        1,
+        1,
+        1,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1434475916
+    "timestamp": 1437574239
   }
 }

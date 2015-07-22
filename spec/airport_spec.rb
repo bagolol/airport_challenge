@@ -20,25 +20,23 @@ describe Airport do
 
   describe 'land' do
     it 'a plane cannot land if the airport is full' do
-      allow(plane).to receive(:landed).and_return("landed")
-      allow(subject).to receive(:forecast).and_return("sunny")
+      allow(plane).to receive(:landed).and_return(:landed)
+      allow(subject).to receive(:forecast).and_return(:sunny)
       @capacity.times { subject.land plane }
       expect { subject.land plane }.to raise_error 'airport full, permission denied'
     end
-    # it 'a plane cannot take off if the hangar is empty' do
-    #   subject.hangar.count = 0
-    #   expect { subject.take_off plane }.to raise_error 'no planes'
-    # end
 
     it 'raises an error when full with default capacity' do
       expect(@capacity).to eq 10
     end
+
     it 'a plane cannot land if the weather is stormy' do
-      allow(subject).to receive(:forecast).and_return("stormy")
+      allow(subject).to receive(:forecast).and_return(:stormy)
       expect { subject.land plane }.to raise_error 'stormy weather, permission denied'
     end
+
     it 'a plane cannot take off if the weather is stormy or storm brewing' do
-      allow(subject).to receive(:forecast).and_return("stormy")
+      allow(subject).to receive(:forecast).and_return(:stormy)
       expect { subject.take_off plane }.to raise_error 'stormy weather, permission denied'
     end
   end

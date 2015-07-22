@@ -44,7 +44,7 @@ Improvements
 
 * expand text coverage
 * resolve rubocop styling issues
-* replace strings with symbols were possible
+
 
 
 

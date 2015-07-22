@@ -1,5 +1,5 @@
 module Forecast
-  FORECAST = ["stormy", "sunny"]
+  FORECAST = [:stormy, :sunny]
 
   def self.now
     FORECAST.sample
