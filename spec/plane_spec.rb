@@ -9,7 +9,7 @@ describe Plane do
     subject.landed
     expect(subject.status).to eq :landed
   end
-   it 'has a flying status when in the air' do
+  it 'has a flying status when in the air' do
     subject.flying
     expect(subject.status).to eq :flying
   end

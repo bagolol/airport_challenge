@@ -8,7 +8,7 @@ class Airport
 
   attr_accessor :hangar
 
-  def initialize()
+  def initialize
     @hangar = []
   end
 
@@ -27,7 +27,6 @@ class Airport
   def forecast
     Forecast.now
   end
-
 
   def full?
     hangar.count >= AIRPORT_CAPACITY

@@ -1,6 +1,5 @@
 require 'airport'
 
-
 describe Airport do
 
   before(:each) do
